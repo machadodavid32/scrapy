@@ -1,0 +1,20 @@
+Abra um ambiente virtual na pasta do projeto. 
+De dentro da pasta escolhida, abra o cmd (pode ser digitado na barra de 
+endereço + enter).
+
+Com o terminal aberto, digite:
+
+python -m venv nomedoambiente
+
+exemplo: python -m venv david
+
+
+ATIVAR O AMBIENTE virtual
+O comando é:
+david\scripts\activate
+
+\\\\\\\\\\\\
+
+Agora instale o scrapy com:
+
+pip install scrapy

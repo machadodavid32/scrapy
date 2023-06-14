@@ -1,0 +1,10 @@
+Podemos encontrar este arquivo após digitar o endereço do site
+e colocar robots.txt
+
+exemplos:
+mercadolivre.com.br/robots.txt
+olx.com.br/robots.txt
+
+Basicamente é um arquivo que dita regra de cada site para varrer dados
+que são permitidos ou não.
+
