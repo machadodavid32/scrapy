@@ -1,0 +1,30 @@
+O comando para começar um projeto scrapy é, no terminal:
+
+scrapy startproject nomedoprojeto
+
+exemplo: scrapy startproject varredor_de_sites
+
+obs: Faça dentro do ambiente virtual criado. Após isso sera criado uma pasta. Entre na pasta e contine o seu trabalho
+
+SOBRE O SCRAPY SHELL
+É um recurso ativado no terminal digitando scrapy shell urldosite
+
+Exemplo: scrapy shell https://quotes.toscrape.com/
+
+Através dele podemos testar o xpath em tempo real.
+Exemplo do comando:
+
+response.xpath("//span[@class='text']/text()").get()
+
+A resposta será, neste caso, o texto escrito no xpath da pagina. O xpath esta funcionando
+
+O comando get() retornará somente o primeiro resultado. Caso queira retornar os outros resultados, digite getall()
+
+response.xpath("//span[@class='text']/text()").getall()
+
+COMO COLAR NO terminal LINUX: CRLT + SHIFT + V
+
+CTRL + Z SAI DO SHELL LINUX
+
+
+HISTORICO DE CODIGOS:
