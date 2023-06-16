@@ -13,10 +13,13 @@ class QuotesToScrapeSpider(scrapy.Spider):
     #Response
     def parse(self, response):
         # Aqui é onde você deve processar o que é retornado da response
-        with open('pagina.html', 'wb') as arquivo:
-            arquivo.write(response.body)
-            
-# Este pequeno projeto é para clonar uma página html.
+        for elemento in response.xpath("//div[@class='quote']"):
+            yield{
+                'frase': elemento.xpath(".//span[@class='text']/text()").get(),
+                'autor': elemento.xpath(".//small[@class='author']/text()").get(),
+                'tag': elemento.xpath(".//a[@class='tag']/text()").getall()
+            }
+
 # Para rodar, abra o terminal aqui em baixo, vá até a pasta do projeto e digite:
 # scrapy crawl nomedobot
 # Aqui seria a pasta "varredor_de_sites" e scrapy crawl frasebot            
