@@ -28,3 +28,10 @@ CTRL + Z SAI DO SHELL LINUX
 
 
 HISTORICO DE CODIGOS:
+
+
+
+
+PARA SALVAR NO CSV PELO terminal
+
+scrapy crawl nomedobot -O nomedoarquivo.csv
