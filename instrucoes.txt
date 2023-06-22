@@ -34,4 +34,18 @@ HISTORICO DE CODIGOS:
 
 PARA SALVAR NO CSV PELO terminal
 
-scrapy crawl nomedobot -O nomedoarquivo.csv
+scrapy crawl nomedobot -O nomedobot.csv
+
+PARA SALVAR NO XML PELO terminal
+scrapy crawl nomedobot -O nomedobot.xml
+
+PARA SALVAR NO json PELO terminal
+scrapy crawl nomedobot -O nomedobot.json
+
+Obs: Se usar o -o(ó minusculo) ele vai acrescentar dados em um arquivo já existente. Não funciona pra Json, pois vai ficar arquivo inválido.
+
+
+BANCO DE DADOS
+A configuração do banco de dados está no arquivo
+pipelines.py e settings.py(neste caso, está na linha de "ITEM_PIPELINES)
+
