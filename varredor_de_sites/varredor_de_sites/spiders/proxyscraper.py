@@ -15,14 +15,14 @@ class ProxyScraperSpider(scrapy.Spider):
             # O xpath acima engloba toda a tabela.
             # Abaixo vamos iterar com cada coluna.
             yield {
-                'IP Adress': linha.xpath('./td[1]/text()').get(), # este xpath é a continuação do xpath acima, pra pegar a coluna.
+                'IP_Adress': linha.xpath('./td[1]/text()').get(), # este xpath é a continuação do xpath acima, pra pegar a coluna.
                 'Port': linha.xpath('./td[2]/text()').get(),
                 'Code': linha.xpath('./td[3]/text()').get(),
                 'Country': linha.xpath('./td[4]/text()').get(),
                 'Anonymity': linha.xpath('./td[5]/text()').get(),
                 'Google': linha.xpath('./td[6]/text()').get(),
                 'Https': linha.xpath('./td[7]/text()').get(),
-                'Last Checked': linha.xpath('./td[8]/text()').get()
+                'Last_Checked': linha.xpath('./td[8]/text()').get()
                 } 
             
             
