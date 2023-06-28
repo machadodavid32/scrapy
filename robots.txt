@@ -8,3 +8,5 @@ olx.com.br/robots.txt
 Basicamente é um arquivo que dita regra de cada site para varrer dados
 que são permitidos ou não.
 
+Podemos ignorar o arquivo robot.txt da seguinte forma:
+Vá até settings e na linha onde se encontrar o ROBOTSTXT_OBEY = True ....coloca False no lugar do True

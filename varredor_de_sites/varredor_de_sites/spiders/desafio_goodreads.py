@@ -2,7 +2,7 @@ import scrapy
 
 class GoodReadsSpider(scrapy.Spider):
     #Identidade
-    name = 'frasebot'
+    name = 'frasebot1'
     #Request
     def start_requests(self):
        urls = ['https://www.goodreads.com/quotes']
